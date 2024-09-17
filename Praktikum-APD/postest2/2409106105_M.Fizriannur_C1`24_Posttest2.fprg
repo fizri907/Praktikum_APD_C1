@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106105_M.Fizriannur_C124_Posttest2"/>
+        <attribute name="authors" value="fizri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-16 10:36:54 PM"/>
+        <attribute name="created" value="Zml6cmk7TEFQVE9QLTJEOThLQkhMOzIwMjQtMDktMTY7MTA6MDc6MDkgUE07Mjg2Mg=="/>
+        <attribute name="edited" value="Zml6cmk7TEFQVE9QLTJEOThLQkhMOzIwMjQtMDktMTY7MTA6MzY6NTQgUE07MTsyOTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nama, NIM" type="String" array="False" size=""/>
+            <declare name="HargaGula" type="Integer" array="False" size=""/>
+            <declare name="Diskon" type="String" array="False" size=""/>
+            <declare name="DiskonGulaku, DiskonManisKita, DiskonGunungMadu" type="Real" array="False" size=""/>
+            <declare name="HSDgulaku, HSDmaniskita, HSDgunungmadu" type="Real" array="False" size=""/>
+            <input variable="Nama"/>
+            <input variable="NIM"/>
+            <input variable="HargaGula"/>
+            <assign variable="DiskonGulaku" expression="(HargaGula)*(0.07)"/>
+            <assign variable="DiskonManisKita" expression="(HargaGula)*(0.11)"/>
+            <assign variable="DiskonGunungMadu" expression="(HargaGula)*(0.13)"/>
+            <assign variable="HSDgulaku" expression="HargaGula- DiskonGulaku"/>
+            <assign variable="HSDmaniskita" expression="HargaGula- DiskonManisKita"/>
+            <assign variable="HSDgunungmadu" expression="HargaGula- DiskonGunungMadu"/>
+            <output expression="HSDgulaku" newline="True"/>
+            <output expression="HSDmaniskita" newline="True"/>
+            <output expression="HSDgunungmadu" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
