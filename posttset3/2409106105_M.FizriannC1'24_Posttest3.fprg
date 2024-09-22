@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106105_M.Fizriannur_Posttest3"/>
+        <attribute name="authors" value="fizri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-22 08:20:01 PM"/>
+        <attribute name="created" value="Zml6cmk7TEFQVE9QLTJEOThLQkhMOzIwMjQtMDktMjI7MDY6NTY6MzggUE07Mjg3MA=="/>
+        <attribute name="edited" value="Zml6cmk7TEFQVE9QLTJEOThLQkhMOzIwMjQtMDktMjI7MDg6MjA6MDEgUE07MzsyOTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nama" type="String" array="False" size=""/>
+            <declare name="Hari" type="String" array="False" size=""/>
+            <declare name="Uang" type="Integer" array="False" size=""/>
+            <declare name="Hargatiket" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan nama anda&quot;" newline="True"/>
+            <input variable="Nama"/>
+            <output expression="&quot;Masukan Hari&quot;" newline="True"/>
+            <input variable="Hari"/>
+            <output expression="&quot;Uang yang anda miliki&quot;" newline="True"/>
+            <input variable="Uang"/>
+            <if expression="Hari == &quot;Senin&quot; OR Hari == &quot;Selasa&quot; OR Hari == &quot;Rabu&quot; OR Hari == &quot;Kamis&quot;">
+                <then>
+                    <if expression="Uang &gt;= 40000">
+                        <then>
+                            <output expression="&quot;Selamattt! anda termasuk golongan billgeth untuk membeli tiket hari ini&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;MISKIN LO!!! skip dulu&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Hari == &quot;Jumat&quot;">
+                        <then>
+                            <if expression="Uang &gt;= 45000">
+                                <then>
+                                    <output expression="&quot;Selamattt! anda termasuk golongan billgeth untuk membeli tiket hari ini&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;MISKIN LO!!! skip dulu&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="Hari == &quot;Sabtu&quot;">
+                                <then>
+                                    <if expression="Uang &gt;= 50000">
+                                        <then>
+                                            <output expression="&quot;Selamattt! anda termasuk golongan billgeth untuk membeli tiket hari ini&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;MISKIN LO!!! skip dulu&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="Hari == &quot;Minggu&quot;">
+                                        <then>
+                                            <if expression="Uang &gt;= 55000">
+                                                <then>
+                                                    <output expression="&quot;Selamattt! anda termasuk golongan billgeth untuk membeli tiket hari ini&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;MISKIN LO!!! skip dulu&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
